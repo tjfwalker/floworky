@@ -1,5 +1,8 @@
+// @flow
 class Node {
-  constructor( item=null ) {
+  item: ?Object
+  children: Array<Object>
+  constructor( item : ?Object = null ) {
     this.item = item
     this.children = []
   }

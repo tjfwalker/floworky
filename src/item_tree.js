@@ -1,8 +1,10 @@
+// @flow
+
 const Node = require( './node' )
 
 class ItemTree {
   // PRECONDITION: items is in sorted order
-  constructor( items=[] ) {
+  constructor( items: Array<Object> = [] ) {
     this.root = new Node({ id: 0, title: 'Home' })
 
     items.forEach( item => this.insert({
