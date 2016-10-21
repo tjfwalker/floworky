@@ -8,7 +8,8 @@ if( fs.existsSync( '.env' ) ) {
 
 module.exports = {
   "development": {
-     "use_env_variable": "DATABASE_URL"
+     "use_env_variable": "DATABASE_URL",
+     "dialect": "sequelize"
   },
   "test": {
      "use_env_variable": "DATABASE_URL"
